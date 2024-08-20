@@ -1549,6 +1549,7 @@ document.addEventListener('keydown', function(event) {
         score = 0;
         const cs = new PIXI.Ticker;
         cs.start();
+        cs.minFPS = 60;
         cs.add((delta) => { entrance(delta,cs) });
         cheer();
     }
@@ -2110,6 +2111,7 @@ function cheer(){
     bar.y = 300;
     gameBox.addChild(bar);
     const songTicker = new PIXI.Ticker;
+    songTicker.minFPS = 60;
     songTicker.add((delta) => { moves(delta,bar,songTicker) });
     songTicker.start();
 }
@@ -2187,6 +2189,7 @@ function moves(delta,bar,songTicker){
     if (airtime/60 > duration){
         const cts = new PIXI.Ticker;
         gameBox.removeChild(bar);
+        cts.minFPS = 60;
         cts.add((delta) => { exit(delta,cts) });
         cts.start();
         songTicker.destroy();
