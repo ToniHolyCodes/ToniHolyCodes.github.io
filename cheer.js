@@ -1720,7 +1720,6 @@ function moves(delta,bar,songTicker){
     let shifts = 0;
     for (let j=0;j<onscreen.length;j++){
         onscreen[j].y += 1;
-        console.log(airtime);
         if (onscreen[j].y> 380){
             gameBox.removeChild(onscreen[j]);
             shifts += 1;
