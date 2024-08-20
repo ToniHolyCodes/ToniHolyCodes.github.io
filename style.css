@@ -1,0 +1,120 @@
+@font-face {
+    font-family: arcade;
+    src: url(assets/ArcadeAlternate.ttf);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden
+}
+
+.menu{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+.menuitem{
+    padding: 15px;
+}
+  
+.main{
+    justify-self: right;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.screen{
+    position: fixed;
+    padding-top: 145px;
+    padding-left: 371px;
+    height: 48%;
+    width: 46%;
+}
+
+img{
+    width: 30%;
+}
+
+#screen{
+    padding-left: 24%;
+    padding-top: 10%;
+}
+
+.landing{
+    /* The image used */
+    background-image: url("assets/machine1.gif");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    padding-left: 350px;
+    position: fixed;
+    height: 12%;
+    width: 45%;
+}
+
+.cheer{
+    /* The image used */
+    background-image: url("assets/machine2.gif");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.console{
+    padding-left: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30px;
+    width: 650px;
+    align-items: flex-end;
+}
+
+.con{
+    padding-left: 258px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 596px;
+    width: 650px;
+    align-items: flex-end;
+}
+
+.rb{
+    height: 11%;
+    width: 13%;
+    position:fixed;
+}
+
+.yb{
+    height: 9%;
+    width: 10%;
+    position:fixed;
+}
+
+.bb{
+    height: 4%;
+    width: 6%;
+    padding-left: 40px;
+    position:fixed;
+    cursor: pointer;
+}

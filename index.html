@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Arcade Area | Home of unlicensed MBAV fan content</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/epute.png">
+</head>
+<body class="landing">
+  <img class="title" src="assets/logo.png">
+  <img id="sc" class="screen" src="assets/e_bounce.gif">
+  <div class="con">
+    <div>
+      <a href="./cheer.html">
+        <img class="yb" src="assets/red.png" onmouseover="this.src='assets/red1.png';" onmouseout="this.src='assets/red.png';">
+      </a>
+    </div>
+    <div>
+      <a href="./index.html">
+        <img class="yb" src="assets/yellow.png" onmouseover="this.src='assets/yellow1.png';" onmouseout="this.src='assets/yellow.png';">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.tumblr.com/xx-completely-in-ur-car-xx-blog" target="_blank">
+        <img class="yb" src="assets/blue.png" onmouseover="this.src='assets/blue1.png';" onmouseout="this.src='assets/blue.png';">
+      </a>
+    </div>
+    <div>
+      <img class="bb" src="assets/green.png" onmouseover="this.src='assets/green.gif';" onmouseout="this.src='assets/green.png';"
+      onclick="myFunction()">
+    </div>
+
+    <script>
+      function myFunction() {
+        let text = document.getElementById("sc").src;
+        if (text.indexOf("assets/e_bounce.gif") != -1){
+          document.getElementById("sc").src = "assets/s_bounce.gif";
+        }
+        else if(text.indexOf("assets/s_bounce.gif") != -1){
+          document.getElementById("sc").src = "assets/b_bounce.gif";
+        }
+        else{
+          document.getElementById("sc").src = "assets/e_bounce.gif";
+        }
+        }
+    </script>
+
+  </div>
+</body>
