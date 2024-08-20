@@ -1742,6 +1742,9 @@ function moves(delta,bar,songTicker){
     if (airtime/60 > duration){
         const cts = new PIXI.Ticker;
         gameBox.removeChild(bar);
+        betty.currentFrame=28;
+        erica.currentFrame=28;
+        sarah.currentFrame=28;
         cts.add((delta) => { exit(delta,cts) });
         cts.start();
         songTicker.destroy();
@@ -1751,9 +1754,6 @@ function moves(delta,bar,songTicker){
 }
 
 function exit(delta, cts){
-    betty.currentFrame=28;
-    erica.currentFrame=28;
-    sarah.currentFrame=28;
     shuffle += delta.deltaTime;
     switch(dancer) {
         case 0:
