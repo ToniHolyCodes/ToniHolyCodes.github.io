@@ -6,6 +6,7 @@ await PIXI.Assets.load("assets/screen.png");
 await PIXI.Assets.load("assets/betty.png");
 await PIXI.Assets.load("assets/erica.png");
 await PIXI.Assets.load("assets/sarah.png");
+await PIXI.Assets.load("assets/veronica.png");
 
 await PIXI.Assets.load("assets/up.png");
 await PIXI.Assets.load("assets/down.png");
@@ -1045,9 +1046,332 @@ let s = new PIXI.Spritesheet(
     sData
 );
 
+const vData = {
+    "frames":{
+        "veronica0.png":{
+            "frame":{"x":0,"y":0,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica1.png":{
+            "frame":{"x":770,"y":0,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica2.png":{
+            "frame":{"x":1540,"y":0,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica3.png":{
+            "frame":{"x":2310,"y":0,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica4.png":{
+            "frame":{"x":3080,"y":0,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica5.png":{
+            "frame":{"x":3850,"y":0,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica6.png":{
+            "frame":{"x":4620,"y":0,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica7.png":{
+            "frame":{"x":0,"y":770,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica8.png":{
+            "frame":{"x":770,"y":770,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica9.png":{
+            "frame":{"x":1540,"y":770,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica10.png":{
+            "frame":{"x":2310,"y":770,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica11.png":{
+            "frame":{"x":3080,"y":770,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica12.png":{
+            "frame":{"x":3850,"y":770,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica13.png":{
+            "frame":{"x":4620,"y":770,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica14.png":{
+            "frame":{"x":0,"y":1540,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica15.png":{
+            "frame":{"x":770,"y":1540,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica16.png":{
+            "frame":{"x":1540,"y":1540,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica17.png":{
+            "frame":{"x":2310,"y":1540,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica18.png":{
+            "frame":{"x":3080,"y":1540,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica19.png":{
+            "frame":{"x":3850,"y":1540,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica20.png":{
+            "frame":{"x":4620,"y":1540,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica21.png":{
+            "frame":{"x":0,"y":2310,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica22.png":{
+            "frame":{"x":770,"y":2310,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica23.png":{
+            "frame":{"x":1540,"y":2310,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica24.png":{
+            "frame":{"x":2310,"y":2310,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica25.png":{
+            "frame":{"x":3080,"y":2310,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica26.png":{
+            "frame":{"x":3850,"y":2310,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica27.png":{
+            "frame":{"x":4620,"y":2310,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica28.png":{
+            "frame":{"x":0,"y":3080,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica29.png":{
+            "frame":{"x":770,"y":3080,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica30.png":{
+            "frame":{"x":1540,"y":3080,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica31.png":{
+            "frame":{"x":2310,"y":3080,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica32.png":{
+            "frame":{"x":3080,"y":3080,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica33.png":{
+            "frame":{"x":3850,"y":3080,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica34.png":{
+            "frame":{"x":4620,"y":3080,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica35.png":{
+            "frame":{"x":0,"y":3850,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica36.png":{
+            "frame":{"x":770,"y":3850,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica37.png":{
+            "frame":{"x":1540,"y":3850,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica38.png":{
+            "frame":{"x":2310,"y":3850,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica39.png":{
+            "frame":{"x":3080,"y":3850,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica40.png":{
+            "frame":{"x":3850,"y":3850,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica41.png":{
+            "frame":{"x":4620,"y":3850,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica42.png":{
+            "frame":{"x":0,"y":4620,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica43.png":{
+            "frame":{"x":770,"y":4620,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica44.png":{
+            "frame":{"x":1540,"y":4620,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica45.png":{
+            "frame":{"x":2310,"y":4620,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica46.png":{
+            "frame":{"x":3080,"y":4620,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}},
+        "veronica47.png":{
+            "frame":{"x":3850,"y":4620,"w":770,"h":770},
+            "rotated":false,
+            "trimmed":false,
+            "spriteSourceSize":{"x":0,"y":0,"w":770,"h":770},
+            "sourceSize":{"w":770,"h":770}}
+    },
+    
+    "meta":{
+        "app":"https://github.com/piskelapp/piskel/",
+        "version":"1.0",
+        "image":"assets/veronica.png",
+        "format":"RGBA8888",
+        "size":{"w":5390,"h":5390}
+    },
+
+    animations: {
+        veronica: ["veronica0.png","veronica1.png","veronica2.png","veronica3.png",
+            "veronica4.png","veronica5.png","veronica6.png","veronica7.png",
+            "veronica8.png","veronica9.png","veronica10.png","veronica11.png",
+            "veronica12.png","veronica13.png","veronica14.png","veronica15.png",
+            "veronica16.png","veronica17.png","veronica18.png","veronica19.png",
+            "veronica20.png","veronica21.png","veronica22.png","veronica23.png",
+            "veronica24.png","veronica25.png","veronica26.png","veronica27.png",
+            "veronica28.png","veronica29.png","veronica30.png","veronica31.png",
+            "veronica32.png","veronica33.png","veronica34.png","veronica35.png",
+            "veronica36.png","veronica37.png","veronica38.png","veronica39.png",
+            "veronica40.png","veronica41.png","veronica42.png","veronica43.png",
+            "veronica44.png","veronica45.png","veronica46.png","veronica47.png",
+    ]
+    }
+};
+
+let v = new PIXI.Spritesheet(
+    PIXI.Texture.from(vData.meta.image),
+    vData
+);
+
 await b.parse();
 await e.parse();
 await s.parse();
+await v.parse();
 
 const gameBox = new PIXI.Container();
 app.stage.addChild(gameBox);
@@ -1066,9 +1390,13 @@ const sarah = new PIXI.AnimatedSprite(s.animations.sarah);
 sarah.anchor.set(0.125,0.2);
 sarah.currentFrame=28;
 
+const veronica = new PIXI.AnimatedSprite(v.animations.veronica);
+veronica.anchor.set(0.125,0.2);
+veronica.currentFrame=28;
+
 let dancer = 0;
 let track = 0;
-const DANCERS = 3;
+const DANCERS = 4;
 let shuffle, score, state;
 //songs have a song (.mp3), a dance
 // (array of moves in Betty's move set),
@@ -1146,7 +1474,7 @@ const cInfo = new PIXI.BitmapText({
     },
 });
 cInfo.x = 70;
-cInfo.y = 120;
+cInfo.y = 100;
 
 const cBio = new PIXI.BitmapText({
     text: "Ready to\ncheer!",
@@ -1157,7 +1485,7 @@ const cBio = new PIXI.BitmapText({
     },
 });
 cBio.x = 70;
-cBio.y = 160;
+cBio.y = 140;
 
 const sInfo = new PIXI.BitmapText({
     text: "Demo Track-",
@@ -1192,45 +1520,326 @@ const instr = new PIXI.BitmapText({
 instr.x = 360;
 instr.y = 150;
 
+document.addEventListener('keydown', function(event) {
+    if (((event.keyCode == 39) || (event.keyCode == 68))
+    && (state == true)) {
+        if (dancer < DANCERS - 1) {
+            dancer += 1;
+        }
+        else {
+            dancer = 0;
+        }
+    }
+    if (((event.keyCode == 65) || (event.keyCode == 37))
+        && (state == true)) {
+        if (dancer > 0) {
+            dancer -= 1;
+        }
+        else{
+            dancer = DANCERS - 1;
+        }
+    }
+    else if ((event.keyCode == 13) && (state == true)) {
+        app.stage.removeChild(instr);
+        gameBox.removeChild(cInfo);
+        gameBox.removeChild(cBio);
+        gameBox.removeChild(sInfo);
+        gameBox.removeChild(sBio);
+        bitmapFontText.text = "Score:";
+        score = 0;
+        const cs = new PIXI.Ticker;
+        cs.start();
+        cs.add((delta) => { entrance(delta,cs) });
+        cheer();
+    }
+}, true);
+
+document.addEventListener('keydown', function(event) {
+    if (((event.keyCode == 65) || (event.keyCode == 37)
+    || (event.keyCode == 39) || (event.keyCode == 68)
+    || (event.keyCode == 38) || (event.keyCode == 87)
+    || (event.keyCode == 40) || (event.keyCode == 83))
+    && !(state)
+    && !(keyLock)) {
+        switch(dancer){
+            case 0:
+                keyLock = true;
+                if ((bar.y < onscreen[0].y) && (onscreen[0].y < bar.y + 40)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 50;
+                        betty.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Perfect!";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 10 < onscreen[0].y) && (onscreen[0].y < bar.y + 50)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 20;
+                        betty.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Great";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 20 < onscreen[0].y) && (onscreen[0].y < bar.y + 60)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 10;
+                        betty.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Good";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 40 < onscreen[0].y) && (onscreen[0].y < bar.y + 80)) {
+                    rank.text = "Almost";
+                    onscreen[0].destroy();
+                    onscreen.shift();
+                    betty.currentFrame = dance.pop();
+                }
+                else {
+                    rank.text = "Bad";
+                }
+                break;
+
+            case 1:
+                keyLock = true;
+                if ((bar.y < onscreen[0].y) && (onscreen[0].y < bar.y + 40)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 50;
+                        erica.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Perfect!";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 10 < onscreen[0].y) && (onscreen[0].y < bar.y + 50)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 20;
+                        erica.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Great";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 20 < onscreen[0].y) && (onscreen[0].y < bar.y + 60)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 10;
+                        erica.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Good";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 40 < onscreen[0].y) && (onscreen[0].y < bar.y + 80)) {
+                    rank.text = "Almost";
+                    onscreen[0].destroy();
+                    onscreen.shift();
+                    erica.currentFrame = dance.pop();
+                }
+                else {
+                    rank.text = "Bad";
+                }
+                break;
+
+                case 2:
+                keyLock = true;
+                if ((bar.y < onscreen[0].y) && (onscreen[0].y < bar.y + 40)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 50;
+                        sarah.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Perfect!";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 10 < onscreen[0].y) && (onscreen[0].y < bar.y + 50)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 20;
+                        sarah.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Great";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 20 < onscreen[0].y) && (onscreen[0].y < bar.y + 60)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 10;
+                        sarah.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Good";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 40 < onscreen[0].y) && (onscreen[0].y < bar.y + 80)) {
+                    rank.text = "Almost";
+                    onscreen[0].destroy();
+                    onscreen.shift();
+                    sarah.currentFrame = dance.pop();
+                }
+                else {
+                    rank.text = "Bad";
+                }
+                break;
+
+                case 3:
+                keyLock = true;
+                if ((bar.y < onscreen[0].y) && (onscreen[0].y < bar.y + 40)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 50;
+                        veronica.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Perfect!";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 10 < onscreen[0].y) && (onscreen[0].y < bar.y + 50)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 20;
+                        veronica.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Great";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 20 < onscreen[0].y) && (onscreen[0].y < bar.y + 60)) {
+                    if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
+                    ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
+                    ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
+                    ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
+                        score += 10;
+                        veronica.currentFrame = dance.pop();
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Good";
+                        bitmapFontText.text = "Score: " + score.toString();
+                    }
+                    else{
+                        onscreen[0].destroy();
+                        onscreen.shift();
+                        rank.text = "Oops";
+                    }
+                }
+                else if ((bar.y - 40 < onscreen[0].y) && (onscreen[0].y < bar.y + 80)) {
+                    rank.text = "Almost";
+                    onscreen[0].destroy();
+                    onscreen.shift();
+                    veronica.currentFrame = dance.pop();
+                }
+                else {
+                    rank.text = "Bad";
+                }
+                break;
+        }
+        gameBox.addChild(rank); 
+    }
+}, true);
+
 function menu(){
     state = true;
     betty.renderable = true;
     erica.renderable = true;
     sarah.renderable = true;
-    //let the user pick a song/difficulty/character
-    document.addEventListener('keydown', function(event) {
-        if (((event.keyCode == 39) || (event.keyCode == 68))
-        && (state == true)) {
-            if (dancer < DANCERS - 1) {
-                dancer += 1;
-            }
-            else {
-                dancer = 0;
-            }
-        }
-        if (((event.keyCode == 65) || (event.keyCode == 37))
-            && (state == true)) {
-            if (dancer > 0) {
-                dancer -= 1;
-            }
-            else{
-                dancer = DANCERS - 1;
-            }
-        }
-        else if ((event.keyCode == 13) && (state == true)) {
-            app.stage.removeChild(instr);
-            gameBox.removeChild(cInfo);
-            gameBox.removeChild(cBio);
-            gameBox.removeChild(sInfo);
-            gameBox.removeChild(sBio);
-            bitmapFontText.text = "Score:";
-            score = 0;
-            const cs = new PIXI.Ticker;
-            cs.start();
-            cs.add((delta) => { entrance(delta,cs) });
-            cheer(ticker);
-        }
-    }, true);
+    veronica.renderable = true;
 
     shuffle = 0;
 
@@ -1254,6 +1863,7 @@ function menuLoop(delta){
                 cBio.text = "Ready to\ncheer!";
                 worldBox.removeChild(erica);
                 worldBox.removeChild(sarah);
+                worldBox.removeChild(veronica);
                 worldBox.addChild(betty);
                 break;
     
@@ -1262,6 +1872,7 @@ function menuLoop(delta){
                 cBio.text = "Rises to the\nchallenge";
                 worldBox.removeChild(betty);
                 worldBox.removeChild(sarah);
+                worldBox.removeChild(veronica);
                 worldBox.addChild(erica);
                 break;
 
@@ -1270,7 +1881,17 @@ function menuLoop(delta){
                 cBio.text = "Approaches\nthe floor";
                 worldBox.removeChild(betty);
                 worldBox.removeChild(erica);
+                worldBox.removeChild(veronica);
                 worldBox.addChild(sarah);
+                break;
+
+            case 3: 
+                cInfo.text = "Veronica Morgan";
+                cBio.text = "Prepares\nto get peppy";
+                worldBox.removeChild(betty);
+                worldBox.removeChild(erica);
+                worldBox.removeChild(sarah);
+                worldBox.addChild(veronica);
                 break;
         }
 
@@ -1335,6 +1956,7 @@ function entrance(delta, cs){
         case 0:
             erica.renderable = false;
             sarah.renderable = false;
+            veronica.renderable = false;
             if (betty.x < 250) {
                 betty.x += 1;
                 if (shuffle >= 6) {
@@ -1366,6 +1988,7 @@ function entrance(delta, cs){
     case 1:
         betty.renderable = false;
         sarah.renderable = false;
+        veronica.renderable = false;
         if (erica.x < 250) {
             erica.x += 1;
             if (shuffle >= 6) {
@@ -1398,6 +2021,7 @@ function entrance(delta, cs){
         case 2:
         betty.renderable = false;
         erica.renderable = false;
+        veronica.renderable = false;
         if (sarah.x < 250) {
             sarah.x += 1;
             if (shuffle >= 6) {
@@ -1426,6 +2050,39 @@ function entrance(delta, cs){
             cs.destroy();
         }
         break;
+
+        case 3:
+        betty.renderable = false;
+        erica.renderable = false;
+        sarah.renderable = false;
+        if (veronica.x < 250) {
+            veronica.x += 1;
+            if (shuffle >= 6) {
+                switch (veronica.currentFrame) {
+                    case 28:
+                        veronica.currentFrame = 29;
+                        shuffle = 0;
+                        break;
+                    case 29:
+                        veronica.currentFrame = 30;
+                        shuffle = 0;
+                        break;
+                    case 30:
+                        veronica.currentFrame = 31;
+                        shuffle = 0;
+                        break;
+                    case 31:
+                        veronica.currentFrame = 28;
+                        shuffle = 0;
+                        break;
+                }
+            }
+        }
+        else {
+            shuffle = 0;
+            cs.destroy();
+        }
+        break;
     }
 }
 
@@ -1438,6 +2095,8 @@ const rank = new PIXI.BitmapText({
     },
 });
 
+const bar = PIXI.Sprite.from("assets/bar.png");
+
 function cheer(){
     airtime = 0;
     rank.x = 400;
@@ -1446,7 +2105,6 @@ function cheer(){
     state = false;
     let audio = new Audio(song);
     audio.play();
-    const bar = PIXI.Sprite.from("assets/bar.png");
     bar.scale.set(0.7);
     bar.x = 50;
     bar.y = 300;
@@ -1467,218 +2125,6 @@ function moves(delta,bar,songTicker){
     airtime += delta.deltaTime;
     flash += delta.deltaTime;
     let i=sequence.length;
-    document.addEventListener('keydown', function(event) {
-        if (((event.keyCode == 65) || (event.keyCode == 37)
-        || (event.keyCode == 39) || (event.keyCode == 68)
-        || (event.keyCode == 38) || (event.keyCode == 87)
-        || (event.keyCode == 40) || (event.keyCode == 83))
-        && !(state)
-        && !(keyLock)) {
-            switch(dancer){
-                case 0:
-                    keyLock = true;
-                    if ((bar.y < onscreen[0].y) && (onscreen[0].y < bar.y + 40)) {
-                        if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
-                        ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
-                        ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
-                        ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
-                            score += 50;
-                            betty.currentFrame = dance.pop();
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Perfect!";
-                            bitmapFontText.text = "Score: " + score.toString();
-                        }
-                        else{
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Oops";
-                        }
-                    }
-                    else if ((bar.y - 10 < onscreen[0].y) && (onscreen[0].y < bar.y + 50)) {
-                        if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
-                        ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
-                        ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
-                        ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
-                            score += 20;
-                            betty.currentFrame = dance.pop();
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Great";
-                            bitmapFontText.text = "Score: " + score.toString();
-                        }
-                        else{
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Oops";
-                        }
-                    }
-                    else if ((bar.y - 20 < onscreen[0].y) && (onscreen[0].y < bar.y + 60)) {
-                        if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
-                        ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
-                        ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
-                        ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
-                            score += 10;
-                            betty.currentFrame = dance.pop();
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Good";
-                            bitmapFontText.text = "Score: " + score.toString();
-                        }
-                        else{
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Oops";
-                        }
-                    }
-                    else if ((bar.y - 40 < onscreen[0].y) && (onscreen[0].y < bar.y + 80)) {
-                        rank.text = "Almost";
-                        onscreen[0].destroy();
-                        onscreen.shift();
-                        betty.currentFrame = dance.pop();
-                    }
-                    else {
-                        rank.text = "Bad";
-                    }
-                    break;
-
-                case 1:
-                    keyLock = true;
-                    if ((bar.y < onscreen[0].y) && (onscreen[0].y < bar.y + 40)) {
-                        if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
-                        ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
-                        ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
-                        ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
-                            score += 50;
-                            erica.currentFrame = dance.pop();
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Perfect!";
-                            bitmapFontText.text = "Score: " + score.toString();
-                        }
-                        else{
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Oops";
-                        }
-                    }
-                    else if ((bar.y - 10 < onscreen[0].y) && (onscreen[0].y < bar.y + 50)) {
-                        if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
-                        ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
-                        ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
-                        ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
-                            score += 20;
-                            erica.currentFrame = dance.pop();
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Great";
-                            bitmapFontText.text = "Score: " + score.toString();
-                        }
-                        else{
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Oops";
-                        }
-                    }
-                    else if ((bar.y - 20 < onscreen[0].y) && (onscreen[0].y < bar.y + 60)) {
-                        if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
-                        ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
-                        ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
-                        ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
-                            score += 10;
-                            erica.currentFrame = dance.pop();
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Good";
-                            bitmapFontText.text = "Score: " + score.toString();
-                        }
-                        else{
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Oops";
-                        }
-                    }
-                    else if ((bar.y - 40 < onscreen[0].y) && (onscreen[0].y < bar.y + 80)) {
-                        rank.text = "Almost";
-                        onscreen[0].destroy();
-                        onscreen.shift();
-                        erica.currentFrame = dance.pop();
-                    }
-                    else {
-                        rank.text = "Bad";
-                    }
-                    break;
-
-                    case 2:
-                    keyLock = true;
-                    if ((bar.y < onscreen[0].y) && (onscreen[0].y < bar.y + 40)) {
-                        if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
-                        ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
-                        ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
-                        ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
-                            score += 50;
-                            sarah.currentFrame = dance.pop();
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Perfect!";
-                            bitmapFontText.text = "Score: " + score.toString();
-                        }
-                        else{
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Oops";
-                        }
-                    }
-                    else if ((bar.y - 10 < onscreen[0].y) && (onscreen[0].y < bar.y + 50)) {
-                        if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
-                        ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
-                        ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
-                        ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
-                            score += 20;
-                            sarah.currentFrame = dance.pop();
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Great";
-                            bitmapFontText.text = "Score: " + score.toString();
-                        }
-                        else{
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Oops";
-                        }
-                    }
-                    else if ((bar.y - 20 < onscreen[0].y) && (onscreen[0].y < bar.y + 60)) {
-                        if (((onscreen[0].label == "l") && ((event.keyCode == 65) || (event.keyCode == 37))) ||
-                        ((onscreen[0].label == "r") && ((event.keyCode == 39) || (event.keyCode == 68))) ||
-                        ((onscreen[0].label == "u") && ((event.keyCode == 38) || (event.keyCode == 87))) ||
-                        ((onscreen[0].label == "d") && ((event.keyCode == 40) || (event.keyCode == 83)))) {
-                            score += 10;
-                            sarah.currentFrame = dance.pop();
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Good";
-                            bitmapFontText.text = "Score: " + score.toString();
-                        }
-                        else{
-                            onscreen[0].destroy();
-                            onscreen.shift();
-                            rank.text = "Oops";
-                        }
-                    }
-                    else if ((bar.y - 40 < onscreen[0].y) && (onscreen[0].y < bar.y + 80)) {
-                        rank.text = "Almost";
-                        onscreen[0].destroy();
-                        onscreen.shift();
-                        sarah.currentFrame = dance.pop();
-                    }
-                    else {
-                        rank.text = "Bad";
-                    }
-                    break;
-            }
-            gameBox.addChild(rank); 
-        }
-    }, true);
 
     for (i;i>0;i--){
         if (sequence[i-1][1] <= airtime){
@@ -1838,6 +2284,38 @@ function exit(delta, cts){
                         break;
                     default:
                         sarah.currentFrame=28;
+                }
+            }
+        }
+        else {
+            shuffle = 0
+            cts.destroy();
+        }
+        break;
+
+        case 3:
+        if (veronica.x > 0) {
+            veronica.x -= 1;
+            if (shuffle >= 6) {
+                switch (veronica.currentFrame) {
+                    case 28:
+                        veronica.currentFrame = 29;
+                        shuffle = 0;
+                        break;
+                    case 29:
+                        veronica.currentFrame = 30;
+                        shuffle = 0;
+                        break;
+                    case 30:
+                        veronica.currentFrame = 31;
+                        shuffle = 0;
+                        break;
+                    case 31:
+                        veronica.currentFrame = 28;
+                        shuffle = 0;
+                        break;
+                    default:
+                        veronica.currentFrame=28;
                 }
             }
         }
